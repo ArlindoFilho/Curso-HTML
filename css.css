@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="item header">Header</div>
+  <div class="item body">Conteúdo do corpo</div>
+  <div class="item sidebar"> 
+    <h3> Lista de opções</h3>
+    <ul>
+      <li>Arquivo</li>
+      <li>Categorias</li>
+      <li>Meta</li>
+      <li>Outros</li>
+    </ul>
+  </div>
+</div>
+
+.container {
+    background: #ccc;
+    font-family: Arial,helvetica,sans-serif;
+    padding: 20px;
+      display: grid;
+      grid-template-areas: 
+          'header header header'
+          'body body sidebar'
+          'body body sidebar';
+     font: 16px arial;
+  }
+  
+  .item {
+    padding: 10px;
+  }
+  
+  .item.header {
+    text-align: center;
+      grid-area: header;
+    border-bottom: 1px solid #fff;
+  }
+  .item.body{
+      grid-area: body;
+    
+  }
+  .item.sidebar {
+      grid-area: sidebar;
+    border-left: 1px solid #fff;
+    
+  }

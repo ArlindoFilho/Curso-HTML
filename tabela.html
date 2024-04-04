@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Tabela em JavaScript -- JUCA</title>
+</head>
+<body>
+  <h1>Tabela Dinâmica</h1>
+
+  <script>
+    // criar uma tabela
+    var table = document.createElement("table");
+    
+    // criar a linha do cabeçalho
+    var headerRow = document.createElement("tr");
+    
+    // criar as células do cabeçalho
+    var headerCell1 = document.createElement("th");
+    headerCell1.textContent = "Nome";
+    var headerCell2 = document.createElement("th");
+    headerCell2.textContent = "Idade";
+    
+    // adicionar as células do cabeçalho na linha do cabeçalho
+    headerRow.appendChild(headerCell1);
+    headerRow.appendChild(headerCell2);
+    
+    // adicionar a linha do cabeçalho na tabela
+    table.appendChild(headerRow);
+    
+    // criar a linha de dados
+    var dataRow = document.createElement("tr");
+    
+    // criar as células de dados
+    var dataCell1 = document.createElement("td");
+    dataCell1.textContent = "João";
+    var dataCell2 = document.createElement("td");
+    dataCell2.textContent = "25";
+    
+    // adicionar as células de dados na linha de dados
+    dataRow.appendChild(dataCell1);
+    dataRow.appendChild(dataCell2);
+    
+    // adicionar a linha de dados na tabela
+    table.appendChild(dataRow);
+    
+    // adicionar a tabela na página
+    document.body.appendChild(table);
+  </script>
+</body>
+</html>
